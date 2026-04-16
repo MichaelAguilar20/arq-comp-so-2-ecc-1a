@@ -20,3 +20,23 @@ write-output $y
 [array]$z = @(1,2,3)
 #Envia  el valor de $z a la salida
 write-host $z
+$c
+[int]$x = 10
+if ($x -gt 5) {
+Write-Host "Mayor que 5"
+} else {
+Write-Host "5 o menos"
+}
+$lista = @(1, 2, 3)
+foreach ($i in $lista) {
+Write-Host $i
+}
+$x = 0
+while ($x -lt 3) {
+Write-Host $x
+$x++
+}
+function Sumar($a, $b) {
+return $a + $b
+}
+write-host (Sumar 5 7) # Devuelve 12
